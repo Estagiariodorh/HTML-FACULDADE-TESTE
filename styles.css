@@ -155,7 +155,7 @@ button:hover {
     background-color: #9fd2f3;
     padding: 20px;
     margin-top: 20px; /* Reduzi a margem para evitar muito espaço no topo em telas pequenas */
-    width: 40%; /* Ajuste a largura para ocupar toda a largura disponível */
+    width: 38%; /* Ajuste a largura para ocupar toda a largura disponível */
 
     /* Adicione uma margem à direita e à esquerda apenas em telas maiores */
     margin-left: auto;
@@ -165,7 +165,7 @@ button:hover {
 /* Adaptação para telas menores (exemplo: smartphones) */
 @media only screen and (max-width: 767px) {
     #jogos {
-        width: 90%; /* Reduza a largura para evitar que ocupe toda a largura da tela */
+        width: 100%; /* Reduza a largura para evitar que ocupe toda a largura da tela */
     }
 }
 
