@@ -3,215 +3,270 @@
 body,
 h1,
 h2,
-p,
 button {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Pacifico', cursive;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  border-end-start-radius: 40%;
+  border-top-right-radius: 40%;
 }
 
 header {
-    background-color: #5d9df1;
-    color: #ffffff;
-    text-align: center;
-    padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: #ffd1d1;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+  background-color: #ffd1d1;
+  color: #333;
+  line-height: 1.8;
+  overflow-x: auto;
+  overflow-y: scroll;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #ffd1d1;
+  color: #c714df;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  text-shadow: 0px 0px 10px #333;
+  font-family: "Pacifico", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+  color: #ffd1d1;
+  text-shadow: 0px 0px 10px #333;
+  font-family: "Pacifico", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 section {
-    margin: 20px;
+  margin: 20px;
 }
 
 #perfil img {
-    width: 40%;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-left: 0;
+  width: 40%;
+  box-shadow: 0px 0px 10px #333;
+  border: 2px solid #ef9cfa;
+  background-color: #ffd1d1;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 50px;
 }
 
 .galeria-fotos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 .foto {
-    width: 100%;
-    height: auto;
-    border: 2px solid #3498db;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  border: 2px solid #3498db;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px #333;
 }
 
 .foto:hover {
-    transform: scale(1.05);
+  transform: scale(1.6);
 }
 
 .acesso-galeria {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 .acesso-galeria button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #f8a8a8;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .acesso-galeria button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 .zoom-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
 }
 
 .zoom-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .zoom-overlay img {
-    max-width: 80vw;
-    max-height: 80vh;
-    border: 2px solid #fff;
-    display: block;
-    margin-bottom: 10px;
+  max-width: 80vw;
+  max-height: 80vh;
+  border: 2px solid #fff;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .zoom-overlay button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .zoom-overlay button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
-#playlist,
 #mensagens {
-    font-family: 'Pacifico', cursive;
-    background-color: #ecf0f1;
-    padding: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffd1d1;
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
 }
 
 button {
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #f8a8a8;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    font-family: 'Pacifico', cursive;
-    background-color: #2980b9;
+  font-family: "Pacifico", cursive;
+  background-color: #2980b9;
 }
 
 #playlist {
-    font-family: 'Pacifico', cursive;
-    background-color: #ecf0f1;
-    padding: 20px;
-    margin-top: 20px;
-    float: top;
-    width: 50%; /* Ajuste a largura conforme necessário */
+  font-family: "Pacifico", cursive;
+  padding: 20px;
+  margin-top: 20px;
+  float: top;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #jogos {
-    font-family: 'Pacifico', cursive;
-    background-color: #9fd2f3;
-    padding: 20px;
-    margin-top: 20px; /* Reduzi a margem para evitar muito espaço no topo em telas pequenas */
-    width: 38%; /* Ajuste a largura para ocupar toda a largura disponível */
-
-    /* Adicione uma margem à direita e à esquerda apenas em telas maiores */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Adaptação para telas menores (exemplo: smartphones) */
-@media only screen and (max-width: 767px) {
-    #jogos {
-        width: 100%; /* Reduza a largura para evitar que ocupe toda a largura da tela */
-    }
+  font-family: "Pacifico", cursive;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1.5px solid #9034db;
+  box-shadow: 0 0 10px rgba(248, 136, 136, 0.5);
+  color: #000000;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #ffd1d1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: auto;
 }
 
 footer {
-    font-family: 'Pacifico', cursive;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 0px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  font-family: "Pacifico", cursive;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: auto;
+  color: #333;
+  text-shadow: 0px 0px 10px #333;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1.5px solid #9034db;
+  box-shadow: 0 0 10px rgba(248, 136, 136, 0.5);
+  margin-bottom: 20px;
 }
 
 #informacoes {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-top: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #ffd1d1;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 1em;
 }
 
 #informacoes h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5em;
+  color: #c714df;
+  margin-bottom: 10px;
 }
 
 #informacoes section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
 }
 
-#informacoes p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 8px;
+#contagemRegressiva {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #0099ff;
 }
 
-#informacoes #contagemRegressiva {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #2980b9;
+@media screen and (min-width: 768px) {
+  #jogos,
+  #informacoes,
+  #contagemRegressiva,
+  #playlist,
+  #perfil {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
-
-
-@media only screen and (max-width: 767px) {
-    .botao-galeria {
-       display: none;
-    }
- }
