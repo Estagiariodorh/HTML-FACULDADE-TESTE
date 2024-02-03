@@ -39,7 +39,7 @@ h1 {
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;
   text-shadow: 0px 0px 10px #333;
-  font-family: "Honk", "Workbench", Arial;
+  font-family: "Workbench", "Roboto", "Open Sans", "Helvetica Neue";
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
@@ -53,7 +53,7 @@ h2 {
   padding: 1em;
   color: #ffd1d1;
   text-shadow: 0px 0px 10px #333;
-  font-family: "Pacifico", cursive;
+  font-family: "Workbench", "Roboto", "Open Sans", "Helvetica Neue";
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
@@ -198,7 +198,7 @@ button:hover {
 }
 
 #playlist {
-  font-family: "Pacifico", Arial;
+  font-family: "Pacifico", "Roboto", "Open Sans", "Helvetica Neue";
   padding: 20px;
   margin-top: 20px;
   float: center;
@@ -221,12 +221,12 @@ button:hover {
   text-align: center;
 }
 div h4 {
-  font-family: "Honk", "Workbench", Arial;
+  font-family: "Workbench", "Roboto", "Open Sans", "Helvetica Neue";
   text-align: center;
   margin-bottom: 20px;
   background-color: #ffd1d1;
   font-size: 1.8em;
-  color: #e942ff;
+  color: #000000;
   text-shadow: 0px 0px 10px #333;
   text-transform: uppercase;
   letter-spacing: 2px;
