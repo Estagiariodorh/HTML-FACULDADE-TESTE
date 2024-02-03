@@ -19,7 +19,7 @@ header {
 }
 
 body {
-  font-family: "Pacifico", cursive;
+  font-family: "Open Sans", Arial;
   background-color: #ffd1d1;
   color: #333;
   line-height: 1.8;
@@ -39,7 +39,7 @@ h1 {
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;
   text-shadow: 0px 0px 10px #333;
-  font-family: "Pacifico", cursive;
+  font-family: "Honk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
@@ -65,7 +65,7 @@ section {
 }
 
 #perfil img {
-  width: 40%;
+  width: 35%;
   box-shadow: 0px 0px 10px #333;
   border: 2px solid #ef9cfa;
   background-color: #ffd1d1;
@@ -73,6 +73,7 @@ section {
   cursor: pointer;
   border-radius: 50%;
   margin-left: 50px;
+  text-align: left;
 }
 
 .galeria-fotos {
@@ -110,7 +111,14 @@ section {
 }
 
 .acesso-galeria button:hover {
-  background-color: #2980b9;
+  background-color: #b96ead;
+  color: #fff;
+  box-shadow: 0px 0px 10px #333;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .zoom-overlay {
@@ -178,15 +186,22 @@ button {
 }
 
 button:hover {
-  font-family: "Pacifico", cursive;
-  background-color: #2980b9;
+  font-family: "Workbench", "Roboto", "Open Sans", "Helvetica Neue";
+  background-color: #b96ead;
+  color: #fff;
+  box-shadow: 0px 0px 10px #333;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 #playlist {
-  font-family: "Pacifico", cursive;
+  font-family: "Pacifico", Arial;
   padding: 20px;
   margin-top: 20px;
-  float: top;
+  float: center;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -194,26 +209,49 @@ button:hover {
   margin-right: 0;
 }
 
+#jogos img {
+  width: 30%;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px #333;
+  border: 2px solid #ef9cfa;
+  background-color: #ffd1d1;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+}
+div h4 {
+  font-family: "Honk", "Roboto", Arial;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #ffd1d1;
+  font-size: 1.8em;
+  color: #e942ff;
+  text-shadow: 0px 0px 10px #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
 #jogos {
-  font-family: "Pacifico", cursive;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue";
   padding: 20px;
   border-radius: 10px;
   border: 1.5px solid #9034db;
   box-shadow: 0 0 10px rgba(248, 136, 136, 0.5);
-  color: #000000;
+  transition: background-color 0.3s ease-in-out;
+  color: #252521;
   font-size: 1.5em;
   text-align: center;
   background-color: #ffd1d1;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  height: auto;
+  width: 98%;
+  height: 10%;
+  margin-left: 1%;
+  float: center;
 }
 
 footer {
-  font-family: "Pacifico", cursive;
+  font-family: "Workbench", "Roboto", "Open Sans", "Helvetica Neue";
   background-color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -235,23 +273,29 @@ footer {
 }
 
 #informacoes {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue";
   background-color: #ffd1d1;
   padding: 20px;
   margin-top: 20px;
-  font-size: 1em;
+  font-size: 1.5em;
+  text-align: left;
 }
 
 #informacoes h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Workbench", "Open Sans", Arial;
   font-size: 1.5em;
-  color: #c714df;
+  color: #f3925a;
   margin-bottom: 10px;
+  text-shadow: 0px 0px 10px #333;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
 }
 
-#informacoes section {
+section {
   margin-bottom: 20px;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: "Open Sans" under, Arial, sans-serif;
 }
 
 #contagemRegressiva {
@@ -260,12 +304,13 @@ footer {
   color: #0099ff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   #jogos,
   #informacoes,
   #contagemRegressiva,
   #playlist,
-  #perfil {
+  #perfil,
+  #jogos img {
     margin-left: 0%;
     margin-right: 0%;
   }
