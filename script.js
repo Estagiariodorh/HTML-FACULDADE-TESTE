@@ -18,6 +18,24 @@ var partesMensagem = [
   "Amo você além das palavras, além do tempo, além de tudo o que posso expressar. Obrigado por ser a luz na minha vida.",
 ];
 
+function exibirIframe() {
+  // Oculta a imagem e o texto
+  document.getElementById("bombermanGif").style.display = "none";
+  document.querySelector("p").style.display = "block";
+
+  // Exibe a seção com o iframe
+  document.getElementById("iframeContainer").style.display = "block";
+}
+
+function fecharIframe() {
+  // Exibe a imagem e o texto
+  document.getElementById("bombermanGif").style.display = "block";
+  document.querySelector("p").style.display = "block";
+
+  // Oculta a seção com o iframe
+  document.getElementById("iframeContainer").style.display = "none";
+}
+
 // Função para calcular a contagem regressiva
 function calcularContagemRegressiva() {
   // Data do próximo aniversário de Júlia (04/10/2024)
